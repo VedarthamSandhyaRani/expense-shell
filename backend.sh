@@ -8,6 +8,7 @@ G="\e[32m"
 Y="\e[33m"
 N="\e[0m"
 set -e
+
 VALIDATE(){
    if [ $1 -ne 0 ]
    then
@@ -26,7 +27,6 @@ else
     echo "You are super user."
 fi
 
-dnf module disable nodesddjs -y &>>$LOGFILE
-dnf module enable nodejs:20 -y &>>$LOGFILE
-
+sudo dnf install -y https://dev.mysql.com/get/mysql80-community-release-el8-1.noarch.rpm
+sudo dnf install -y jsshava-1.8.0-openjdk java-1.8.0-openjdk-devel
 
