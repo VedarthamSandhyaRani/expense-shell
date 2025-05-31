@@ -8,8 +8,6 @@ R="\e[31m"
 G="\e[32m"
 Y="\e[33m"
 N="\e[0m"
-echo "Please enter DB password:"
-read -s mysql_root_password
 
 VALIDATE(){
    if [ $1 -ne 0 ]
@@ -30,8 +28,6 @@ else
 fi
 
 dnf module disable nodesddjs -y &>>$LOGFILE
-VALIDATE $? "Disabling default nodejs"
-
 dnf module enable nodejs:20 -y &>>$LOGFILE
-VALIDATE $? "Enabling nodejs:20 version"
+
 
