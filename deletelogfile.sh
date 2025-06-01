@@ -1,5 +1,5 @@
-source-directory=/tmp/app-logs
-if[ -d in $source-directory ]
+source_directory=/tmp/app-logs
+if [ -d $source_directory ]
 then 
   echo "source-directory exists"
 else
