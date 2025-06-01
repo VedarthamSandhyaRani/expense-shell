@@ -6,3 +6,4 @@ else
   echo "source-directory doesnot exists"
   exit 1
 fi
+Files=$(find $source_directory -name "*.log"+ -mtime14)
