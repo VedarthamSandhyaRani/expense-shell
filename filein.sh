@@ -1,6 +1,7 @@
 #!/bin/bash
-file = /home/ec2-user/expense-shell/SQL.sh
-if [ -f "$file" ];
+Directory=/home/ec2-user/expense-shell/
+file=SQL.sh
+if [ -f "$Directory/$file" ];
 then 
  echo "file is present"
  else
